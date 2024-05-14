@@ -1,0 +1,7 @@
+Running: xsim.dir/urbanaman_rom_sim_behav/xsimk.exe -simmode gui -wdb urbanaman_rom_sim_behav.wdb -simrunnum 0 -socket 55740
+Design successfully loaded
+Design Loading Memory Usage: 8436 KB (Peak: 8436 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 9060 KB (Peak: 9060 KB)
+Simulation CPU Usage: 62 ms

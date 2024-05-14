@@ -1,0 +1,2 @@
+blk_mem_gen_oam.v,verilog,xil_defaultlib,../../../../SNESonUrbana.gen/sources_1/ip/blk_mem_gen_oam/sim/blk_mem_gen_oam.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

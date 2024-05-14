@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1715020324">
+  <File Type="ROUTE-PWR" Name="urbanaman_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="urbanaman.tcl"/>
+  <File Type="BITSTR-MMI" Name="urbanaman.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="urbanaman_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="urbanaman_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="urbanaman_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="urbanaman_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="urbanaman_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="urbanaman_opt.dcp"/>
+  <File Type="OPT-DRC" Name="urbanaman_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="urbanaman.hwdef"/>
+  <File Type="PWROPT-DCP" Name="urbanaman_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="urbanaman_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="urbanaman_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="urbanaman_placed.dcp"/>
+  <File Type="PLACE-IO" Name="urbanaman_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="urbanaman_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="urbanaman_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="urbanaman_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="urbanaman_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="urbanaman_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="urbanaman_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="urbanaman.bin"/>
+  <File Type="PLACE-TIMING" Name="urbanaman_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="urbanaman_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="urbanaman.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="urbanaman_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="urbanaman_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="urbanaman_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="urbanaman.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="urbanaman_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="urbanaman_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="urbanaman_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="urbanaman_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="urbanaman_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="urbanaman_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="urbanaman_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="urbanaman_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="urbanaman_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="urbanaman_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="urbanaman_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="urbanaman_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="urbanaman_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="urbanaman_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="urbanaman_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="urbanaman_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="urbanaman_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="urbanaman_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="urbanaman_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="urbanaman_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="urbanaman_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="urbanaman_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="urbanaman_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="urbanaman_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="urbanaman_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="urbanaman_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="urbanaman_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="urbanaman.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="urbanaman_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="urbanaman_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="urbanaman.nky"/>
+  <File Type="BITSTR-BMM" Name="urbanaman_bd.bmm"/>
+  <File Type="PDI-FILE" Name="urbanaman.pdi"/>
+  <File Type="RCFI_FILE" Name="urbanaman.rcfi"/>
+  <File Type="CFI_FILE" Name="urbanaman.cfi"/>
+  <File Type="RNPI_FILE" Name="urbanaman.rnpi"/>
+  <File Type="NPI_FILE" Name="urbanaman.npi"/>
+  <File Type="RBD_FILE" Name="urbanaman.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="urbanaman.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="urbanaman.sysdef"/>
+  <File Type="BG-BGN" Name="urbanaman.bgn"/>
+  <File Type="BG-DRC" Name="urbanaman.drc"/>
+  <File Type="RDI-RDI" Name="urbanaman.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="urbanaman_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="urbanaman_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/mb_block_i/mb_block_i.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/bd/mb_block_i/mb_block_i.bd"/>
+        <Attr Name="ImportTime" Val="1714864873"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/design_source/Color_Mapper.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/imports/design_source/Color_Mapper.sv"/>
+        <Attr Name="ImportTime" Val="1714729246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/design_source/VGA_controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/imports/design_source/VGA_controller.sv"/>
+        <Attr Name="ImportTime" Val="1714729246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/design_source/ball.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/imports/design_source/ball.sv"/>
+        <Attr Name="ImportTime" Val="1714729246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/collisions.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/collisions.sv"/>
+        <Attr Name="ImportTime" Val="1714886904"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ghost_linky.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ghost_plinky.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/design_source/hex_driver.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/imports/design_source/hex_driver.sv"/>
+        <Attr Name="ImportTime" Val="1714729246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/map_rommer.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Downloads/map_rommer.sv"/>
+        <Attr Name="ImportTime" Val="1714886884"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/palette_cycler.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/proximity.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/sync.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/new/sync.sv"/>
+        <Attr Name="ImportTime" Val="1714729246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/design_source/mb_usb_hdmi_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/imports/design_source/mb_usb_hdmi_top.sv"/>
+        <Attr Name="ImportTime" Val="1714729246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ghost_blinky.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ghost_cllyde.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ghost.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/pacbg.COE">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="urbanaman"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/constrs_1/imports/pin_assignment/mb_usb_hdmi_top.xdc"/>
+        <Attr Name="ImportTime" Val="1714729246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/urbanaman.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="hdmi_tx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

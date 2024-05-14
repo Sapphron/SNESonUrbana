@@ -1,0 +1,8 @@
+Nothing to build in platform 'mb_usb_hdmi_top'
+
+13:35:44 **** Incremental Build of configuration Debug for project textweek1 ****
+make all 
+make: Nothing to be done for 'all'.
+13:35:45 **** Incremental Build of configuration Debug for project textweek1_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

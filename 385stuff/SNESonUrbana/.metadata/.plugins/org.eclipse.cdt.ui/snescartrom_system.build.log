@@ -1,0 +1,6 @@
+17:38:34 **** Incremental Build of configuration Debug for project snescartrom_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+17:38:35 Build Finished (took 140ms)
+

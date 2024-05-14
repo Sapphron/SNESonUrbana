@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="ddr3_test" location="D:/Spring2024Schoolwork/ECE385/ECE385-SP24-Final-Project/SNESonUrbana/ddr3_test" platform="D:/Spring2024Schoolwork/ECE385/ECE385-SP24-Final-Project/SNESonUrbana/mb_ddr3_top/export/mb_ddr3_top/mb_ddr3_top.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="ddr3_test_system" sysConfig="mb_ddr3_top" runtime="cpp" cpu="standalone_microblaze_0" cpuInstance="microblaze_0" os="standalone" mssSignature="2521a22d60d80f72e924b74e1b8c66aa">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.967952802">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.1420425196" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="dhrystone"/>
+</sdkproject:SdkProject>

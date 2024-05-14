@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../SNESonUrbana.gen/sources_1/ip/blk_mem_brr_buf/sim/blk_mem_brr_buf.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

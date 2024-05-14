@@ -1,0 +1,19 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot simulation_top_behav xil_defaultlib.simulation_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9380] size mismatch in mixed-language port association of VHDL port 'bsram_mask' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:335]
+WARNING: [VRFC 10-3091] actual bit length 24 differs from formal bit length 15 for port 'addra' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:195]
+WARNING: [VRFC 10-5021] port 'BSRAM_Q' is not connected on this instance [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:109]
+WARNING: [VRFC 10-5021] port 'v224_mode' is not connected on this instance [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:225]
+WARNING: [VRFC 10-5021] port 'map_active' is not connected on this instance [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:335]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv" Line 21. Module SNES_toplevel doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv" Line 1. Module main_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv" Line 21. Module SNES_toplevel doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv" Line 1. Module main_default doesn't have a timescale but at least one module in design has a timescale.
+ERROR: [XSIM 43-3138] "C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sim_1/new/simulation_top.sv" Line 135. Cross Language Hierarchical name(SNES_toplevel.main.SNES.CPU.INT_A) is not supported in this context. 
+ERROR: [XSIM 43-4615] "C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/TheSNESRedo/TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sim_1/new/simulation_top.sv" Line 135. Unsupported hierarchical reference SNES_toplevel.main.SNES.CPU.INT_A to VHDL object. We currently have limited support to hierarchical reference to VHDL from Verilog code.

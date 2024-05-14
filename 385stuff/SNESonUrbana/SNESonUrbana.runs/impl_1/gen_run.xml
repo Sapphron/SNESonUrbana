@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1714728430">
+  <File Type="ROUTE-PWR" Name="SNES_toplevel_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="SNES_toplevel.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="SNES_toplevel_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="SNES_toplevel_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="SNES_toplevel.msk"/>
+  <File Type="ROUTE-CLK" Name="SNES_toplevel_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="SNES_toplevel.vdi"/>
+  <File Type="BG-BIT" Name="SNES_toplevel.bit"/>
+  <File Type="BG-DRC" Name="SNES_toplevel.drc"/>
+  <File Type="BG-BGN" Name="SNES_toplevel.bgn"/>
+  <File Type="BG-BIN" Name="SNES_toplevel.bin"/>
+  <File Type="BITSTR-RBT" Name="SNES_toplevel.rbt"/>
+  <File Type="BITSTR-NKY" Name="SNES_toplevel.nky"/>
+  <File Type="BITSTR-BMM" Name="SNES_toplevel_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="SNES_toplevel.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="SNES_toplevel_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="SNES_toplevel.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="SNES_toplevel_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="SNES_toplevel.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="SNES_toplevel_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="SNES_toplevel.hwdef"/>
+  <File Type="PLACE-IO" Name="SNES_toplevel_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SNES_toplevel_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SNES_toplevel_utilization_placed.pb"/>
+  <File Type="ROUTE-RQS" Name="SNES_toplevel_routed.rqs"/>
+  <File Type="PLACE-CTRL" Name="SNES_toplevel_control_sets_placed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SNES_toplevel_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-DRC" Name="SNES_toplevel_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SNES_toplevel_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="SNES_toplevel_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="SNES_toplevel_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SNES_toplevel_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="SNES_toplevel_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="SNES_toplevel_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="SNES_toplevel_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SNES_toplevel_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SNES_toplevel_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="SNES_toplevel_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="SNES_toplevel_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="SNES_toplevel_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="SNES_toplevel_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="SNES_toplevel_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="SNES_toplevel_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="SNES_toplevel_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SNES_toplevel_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="SNES_toplevel_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SNES_toplevel_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="SNES_toplevel_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="SNES_toplevel_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="SNES_toplevel_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="SNES_toplevel.pdi"/>
+  <File Type="RCFI_FILE" Name="SNES_toplevel.rcfi"/>
+  <File Type="CFI_FILE" Name="SNES_toplevel.cfi"/>
+  <File Type="RNPI_FILE" Name="SNES_toplevel.rnpi"/>
+  <File Type="NPI_FILE" Name="SNES_toplevel.npi"/>
+  <File Type="RBD_FILE" Name="SNES_toplevel.rbd"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="SNES_toplevel_postroute_physopted.rqs"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/snes_block/snes_block.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_brr_buf/blk_mem_brr_buf.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HOAM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/REGRAM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SPR_BUF.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/WRAM.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design_source/VGA_controller.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/imports/design_source/VGA_controller.sv"/>
+        <Attr Name="ImportTime" Val="1711737944"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/design_source/hex_driver.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab_6/Lab 6.srcs/sources_1/imports/design_source/hex_driver.sv"/>
+        <Attr Name="ImportTime" Val="1711737944"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/V2SV-main/main.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/65C816/P65816_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/65C816/P65816_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/65C816/BCDAdder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/65C816/BCDAdder.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/65C816/AddSubBCD.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/65C816/AddSubBCD.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/65C816/ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/65C816/ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SPC700/SPC700_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SPC700/SPC700_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SPC700/AddSub.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SPC700/AddSub.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SPC700/BCDAdj.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SPC700/BCDAdj.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SPC700/ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SPC700/ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/65C816/AddrGen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/65C816/AddrGen.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SPC700/AddrGen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SPC700/AddrGen.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/CEGen.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/CEGen.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/65C816/MCode.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/65C816/MCode.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/65C816/P65C816.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/65C816/P65C816.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/CPU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/CPU.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/DSP_PKG.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/SNES_MiSTer-master/rtl/DSP_PKG.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/DSP.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/DSP.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/DSP/OBC1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/DSP/OBC1.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SRTC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SRTC.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/DSP/DSP_LHRomMap.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/DSP/DSP_LHRomMap.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SPC700/MCode.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SPC700/MCode.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SPC700/MulDiv.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SPC700/MulDiv.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/PPU_PKG.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/SNES_MiSTer-master/rtl/PPU_PKG.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/PPU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/PPU.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SPC700/SPC700.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SPC700/SPC700.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SMP.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SMP.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SWRAM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SWRAM.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/SNES.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/SNES.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SNES_toplevel.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/bram.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/bram.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/DSP/DSPn.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/DSP/DSPn.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/snes_block/hdl/snes_block_wrapper.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/ioport.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/ioport.sv"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/BSX/BSX_BS.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/BSX/BSX_BS.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/BSX/BSX_MCC.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/BSX/BSX_MCC.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/BSX/BSX_DP.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/BSX/BSX_DP.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/BSX/BSXMap.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/BSX/BSXMap.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/CX4/cx4cache.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/CX4/cx4cache.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/CX4/CX4.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/CX4/CX4.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/CX4/CX4Map.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/CX4/CX4Map.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SDD1/Decoder.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SDD1/Decoder.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/GSU/GSU_PKG.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/GSU/GSU_PKG.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/GSU/GSU.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/GSU/GSU.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/GSU/GSUMap.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/GSU/GSUMap.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SDD1/InputMgr.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SDD1/InputMgr.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/RTC4513.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/RTC4513.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SA1/SA1MULT.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SA1/SA1MULT.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SA1/SA1DIV.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SA1/SA1DIV.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SA1/SA1.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SA1/SA1.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SA1/SA1Map.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SA1/SA1Map.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SDD1/SDD1.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SDD1/SDD1.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SDD1/SDD1Map.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SDD1/SDD1Map.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SPC7110/SPC7110_FIFO.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SPC7110/SPC7110_FIFO.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SPC7110/SPC7110_DEC_PKG.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SPC7110/SPC7110_DEC_PKG.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SPC7110/SPC7110_DEC.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SPC7110/SPC7110_DEC.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SPC7110/SPC7110_MULDIV.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SPC7110/SPC7110_MULDIV.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SPC7110/SPC7110.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SPC7110/SPC7110.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/SPC7110/SPC7110Map.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/SPC7110/SPC7110Map.vhd"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/hdmi_text_controller_AXI.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/bread_ddr3/mb_ddr3_top.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/bread_ddr3/mb_ddr3_top.sv"/>
+        <Attr Name="ImportTime" Val="1714729246"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/MSU1/MSU.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/MSU1/MSU.sv"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/MSU1/msu_fifo.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/MSU1/msu_fifo.v"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/CX4/drom.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/CX4/drom.mif"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/DSP/dsp11b23410_p.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/DSP/dsp11b23410_p.mif"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/sdram.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/sdram.sv"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/BSX/bsx121-124.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/BSX/bsx121-124.mif"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/MSU1/msu_audio.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/MSU1/msu_audio.v"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/MSU1/msu_data_store.sv">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/MSU1/msu_data_store.sv"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/hps_ext.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/hps_ext.v"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/chip/DSP/dsp11b23410_d.mif">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Desktop/SNES_MiSTer-master/rtl/chip/DSP/dsp11b23410_d.mif"/>
+        <Attr Name="ImportTime" Val="1712582981"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/mig_a.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="snes_block_mig_7series_0_1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="SNES_toplevel"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/snesconst.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/urbana_ddr3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/urbana_ddr3.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/mb_ddr3_top.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_aram"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_oam"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_vram"/>
+  <BlockFileSet Type="BlockSrcs" Name="snes_block_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_cgram"/>
+  <BlockFileSet Type="BlockSrcs" Name="snes_block_mig_7series_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="snes_block_axi_gpio_1_1"/>
+</GenRun>

@@ -1,0 +1,1339 @@
+
+*** Running vivado
+    with args -log SNES_toplevel.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SNES_toplevel.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source SNES_toplevel.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sapph/OneDrive/Desktop/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.cache/ip 
+Command: read_checkpoint -auto_incremental -incremental C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/utils_1/imports/synth_1/mb_ddr3_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/utils_1/imports/synth_1/mb_ddr3_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top SNES_toplevel -part xc7s50csga324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33412
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1243.148 ; gain = 408.867
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9112] actual for formal port 'ci' is neither a static name nor a globally static expression [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:125]
+WARNING: [Synth 8-9112] actual for formal port 'ce' is neither a static name nor a globally static expression [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/CPU.vhd:353]
+INFO: [Synth 8-6157] synthesizing module 'SNES_toplevel' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:1]
+INFO: [Synth 8-638] synthesizing module 'DSP_LHRomMap' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/chip/DSP/DSP_LHRomMap.vhd:59]
+	Parameter USE_DSPn bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'CEGen' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/CEGen.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'CEGen' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/CEGen.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'OBC1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/chip/DSP/OBC1.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'OBC1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/chip/DSP/OBC1.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'SRTC' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/chip/SRTC.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'SRTC' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/chip/SRTC.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'DSP_LHRomMap' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/chip/DSP/DSP_LHRomMap.vhd:59]
+WARNING: [Synth 8-7071] port 'ENABLE' of module 'DSP_LHRomMap' is unconnected for instance 'DSP_LHRomMap' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:336]
+WARNING: [Synth 8-7071] port 'MAP_ACTIVE' of module 'DSP_LHRomMap' is unconnected for instance 'DSP_LHRomMap' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:336]
+WARNING: [Synth 8-7023] instance 'DSP_LHRomMap' of module 'DSP_LHRomMap' has 33 connections declared, but only 31 given [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:336]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/VGA_controller.sv:26]
+WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vgalol' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:189]
+WARNING: [Synth 8-7023] instance 'vgalol' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:189]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'SNES' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SNES.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'SCPU' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/CPU.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'P65C816' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:29]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:82]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'MCode' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/MCode.vhd:18]
+CRITICAL WARNING: [Synth 8-5550] found explicit dontcare in slice;  simulation mismatch may occur [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/MCode.vhd:2368]
+INFO: [Synth 8-256] done synthesizing module 'MCode' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/MCode.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'AddrGen' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddrGen.vhd:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddrGen.vhd:59]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddrGen.vhd:108]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddrGen.vhd:129]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddrGen.vhd:191]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddrGen.vhd:209]
+INFO: [Synth 8-256] done synthesizing module 'AddrGen' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddrGen.vhd:35]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/ALU.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/ALU.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'AddSubBCD' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddSubBCD.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'BCDAdder' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'adder4' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:51]
+INFO: [Synth 8-3491] module 'bit_adder' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:7' bound to instance 'b_add0' of component 'bit_adder' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'bit_adder' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'bit_adder' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:17]
+INFO: [Synth 8-3491] module 'bit_adder' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:7' bound to instance 'b_add1' of component 'bit_adder' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:68]
+INFO: [Synth 8-3491] module 'bit_adder' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:7' bound to instance 'b_add2' of component 'bit_adder' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:69]
+INFO: [Synth 8-3491] module 'bit_adder' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:7' bound to instance 'b_add3' of component 'bit_adder' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'adder4' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'BCDAdder' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'AddSubBCD' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddSubBCD.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/ALU.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/ALU.vhd:26]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:358]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:372]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:386]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:551]
+INFO: [Synth 8-256] done synthesizing module 'P65C816' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'SCPU' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/CPU.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'SWRAM' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SWRAM.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'SWRAM' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SWRAM.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'SPPU' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd:61]
+INFO: [Synth 8-3491] module 'blk_mem_gen_cgram' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_cgram_stub.v:5' bound to instance 'our_cgram' of component 'blk_mem_gen_cgram' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd:397]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_cgram' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_cgram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_cgram' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_cgram_stub.v:5]
+INFO: [Synth 8-3491] module 'blk_mem_gen_oam' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_oam_stub.v:5' bound to instance 'our_oam' of component 'blk_mem_gen_oam' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd:1486]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_oam' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_oam_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_oam' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_oam_stub.v:5]
+INFO: [Synth 8-3491] module 'HOAM' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/HOAM.v:23' bound to instance 'our_hoam' of component 'HOAM' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd:1516]
+INFO: [Synth 8-6157] synthesizing module 'HOAM' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/HOAM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HOAM' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/HOAM.v:23]
+INFO: [Synth 8-3491] module 'SPR_BUF' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SPR_BUF.v:3' bound to instance 'our_spr_buf' of component 'SPR_BUF' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd:1770]
+INFO: [Synth 8-6157] synthesizing module 'SPR_BUF' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SPR_BUF.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SPR_BUF' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SPR_BUF.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd:1945]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd:1952]
+INFO: [Synth 8-256] done synthesizing module 'SPPU' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'SMP' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SMP.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'SPC700' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/SPC700.vhd:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/SPC700.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'SPC700_MCode' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/MCode.vhd:18]
+CRITICAL WARNING: [Synth 8-5550] found explicit dontcare in slice;  simulation mismatch may occur [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/MCode.vhd:4453]
+INFO: [Synth 8-256] done synthesizing module 'SPC700_MCode' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/MCode.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'SPC700_AddrGen' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddrGen.vhd:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddrGen.vhd:99]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddrGen.vhd:123]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddrGen.vhd:138]
+INFO: [Synth 8-256] done synthesizing module 'SPC700_AddrGen' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddrGen.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'SPC700_ALU' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/ALU.vhd:33]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/ALU.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'SPC700_AddSub' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddSub.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'SPC700_AddSub' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddSub.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'SPC700_BCDAdj' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/BCDAdj.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'SPC700_BCDAdj' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/BCDAdj.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'SPC700_ALU' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/ALU.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'MulDiv' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/MulDiv.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'MulDiv' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/MulDiv.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/SPC700.vhd:308]
+INFO: [Synth 8-226] default block is never used [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/SPC700.vhd:373]
+INFO: [Synth 8-256] done synthesizing module 'SPC700' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/SPC700.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'SMP' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SMP.vhd:34]
+INFO: [Synth 8-638] synthesizing module 'DSP' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/DSP.vhd:44]
+INFO: [Synth 8-3491] module 'REGRAM' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/REGRAM.v:3' bound to instance 'our_regram' of component 'REGRAM' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/DSP.vhd:305]
+INFO: [Synth 8-6157] synthesizing module 'REGRAM' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/REGRAM.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'REGRAM' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/REGRAM.v:3]
+INFO: [Synth 8-3491] module 'blk_mem_brr_buf' declared at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_brr_buf_stub.v:5' bound to instance 'brr_buf' of component 'blk_mem_brr_buf' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/DSP.vhd:556]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_brr_buf' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_brr_buf_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_brr_buf' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_brr_buf_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'DSP' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/DSP.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'SNES' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/SNES.vhd:110]
+WARNING: [Synth 8-7071] port 'V224_MODE' of module 'SNES' is unconnected for instance 'SNES' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:226]
+WARNING: [Synth 8-7071] port 'LRCK' of module 'SNES' is unconnected for instance 'SNES' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:226]
+WARNING: [Synth 8-7071] port 'BCK' of module 'SNES' is unconnected for instance 'SNES' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:226]
+WARNING: [Synth 8-7071] port 'SDAT' of module 'SNES' is unconnected for instance 'SNES' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:226]
+WARNING: [Synth 8-7023] instance 'SNES' of module 'SNES' has 71 connections declared, but only 67 given [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:226]
+INFO: [Synth 8-6155] done synthesizing module 'main' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:1]
+WARNING: [Synth 8-7071] port 'MCLK' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'ACLK' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'ROM_TYPE' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'ROM_MASK' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'RAM_MASK' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'ROM_D' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'ROM_CE_N' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'ROM_OE_N' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'ROM_WE_N' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'ROM_WORD' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'BSRAM_ADDR' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'BSRAM_D' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'BSRAM_Q' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'BSRAM_CE_N' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'BSRAM_OE_N' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'BSRAM_WE_N' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'GSU_ACTIVE' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'GSU_TURBO' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'GSU_FASTROM' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'BLEND' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'PAL' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'HIGH_RES' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'FIELD' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'INTERLACE' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'DOTCLK' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'R' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'G' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'B' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'HBLANKn' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'VBLANKn' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'HSYNC' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'VSYNC' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'JOY1_DI' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'JOY2_DI' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'JOY_STRB' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'JOY1_CLK' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'JOY2_CLK' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'JOY1_P6' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'JOY2_P6' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'JOY2_P6_in' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'EXT_RTC' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'GG_EN' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'GG_CODE' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'GG_RESET' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'GG_AVAILABLE' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'SPC_MODE' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'IO_ADDR' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'IO_DAT' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'IO_WR' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'DBG_BG_EN' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'DBG_CPU_EN' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'TURBO' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'TURBO_ALLOW' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'AUDIO_L' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7071] port 'AUDIO_R' of module 'main' is unconnected for instance 'main' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+WARNING: [Synth 8-7023] instance 'main' of module 'main' has 87 connections declared, but only 32 given [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:102]
+INFO: [Synth 8-6157] synthesizing module 'snes_block' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:4042]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_axi_gpio_1_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_axi_gpio_1_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_1_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_axi_gpio_0_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_axi_gpio_0_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_axi_uartlite_0_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_axi_uartlite_0_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_axi_gpio_0_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_axi_gpio_0_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'ip2intc_irpt' of module 'snes_block_axi_gpio_0_0' is unconnected for instance 'gpio_usb_int' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:4562]
+WARNING: [Synth 8-7023] instance 'gpio_usb_int' of module 'snes_block_axi_gpio_0_0' has 21 connections declared, but only 20 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:4562]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_axi_gpio_1_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_axi_gpio_1_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_axi_gpio_2_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_2_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_axi_gpio_2_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_gpio_2_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_mdm_1_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_mdm_1_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_mdm_1_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_mdm_1_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_microblaze_0_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_microblaze_0_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_microblaze_0_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_microblaze_0_axi_intc_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_microblaze_0_axi_intc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_microblaze_0_axi_intc_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_microblaze_0_axi_intc_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_microblaze_0_axi_periph_1' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5257]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_J8WI2S' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:12]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:251]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_0' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:251]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_0' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:251]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_J8WI2S' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_8XVO3M' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:312]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_8XVO3M' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:312]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_13U0E14' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:584]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:823]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_1' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:823]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_1' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:823]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_13U0E14' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:584]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1T7030U' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:884]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_2' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_2_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_2' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_2_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1123]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_2' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1123]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_2' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1123]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1T7030U' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:884]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_38W065' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1184]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_3' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_3_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_3' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_3_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1423]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_3' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1423]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_3' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1423]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_38W065' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1184]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_UR1VA3' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1484]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_4' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_4_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_4' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_4_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1723]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_4' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1723]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_4' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1723]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_UR1VA3' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1484]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1HOQBTD' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1784]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_5' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_5_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_5' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_5_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2023]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_5' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2023]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_5' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2023]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1HOQBTD' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:1784]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_19J795J' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2084]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_6' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_6_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_6' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_6_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_6' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2323]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_6' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2323]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_6' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2323]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_19J795J' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2084]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_1O2RTPY' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2384]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_7' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_7_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_7' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_7_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_7' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2623]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_7' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2623]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_7' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2623]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_1O2RTPY' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2384]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_1GOPQI8' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2684]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_8' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_8_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_8' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_8_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'snes_block_auto_pc_8' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2923]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'snes_block_auto_pc_8' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2923]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_8' has 60 connections declared, but only 58 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2923]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_1GOPQI8' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2684]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_AUMMH1' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3218]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_auto_pc_9' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_9_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_auto_pc_9' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_auto_pc_9_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awregion' of module 'snes_block_auto_pc_9' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3441]
+WARNING: [Synth 8-7071] port 'm_axi_arregion' of module 'snes_block_auto_pc_9' is unconnected for instance 'auto_pc' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3441]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'snes_block_auto_pc_9' has 56 connections declared, but only 54 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3441]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_AUMMH1' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3218]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_IG3VGJ' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3498]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_IG3VGJ' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3498]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1TZN3D5' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3770]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1TZN3D5' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3770]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_xbar_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_xbar_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_microblaze_0_axi_periph_1' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5257]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_V8ROGE' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2984]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_dlmb_bram_if_cntlr_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_dlmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_dlmb_bram_if_cntlr_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_dlmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_dlmb_v10_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_dlmb_v10_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_dlmb_v10_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_dlmb_v10_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'snes_block_dlmb_v10_1' is unconnected for instance 'dlmb_v10' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3130]
+WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'snes_block_dlmb_v10_1' has 25 connections declared, but only 24 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3130]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_ilmb_bram_if_cntlr_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_ilmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_ilmb_bram_if_cntlr_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_ilmb_bram_if_cntlr_1_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_ilmb_v10_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_ilmb_v10_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_ilmb_v10_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_ilmb_v10_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'snes_block_ilmb_v10_1' is unconnected for instance 'ilmb_v10' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3176]
+WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'snes_block_ilmb_v10_1' has 25 connections declared, but only 24 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3176]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_lmb_bram_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_lmb_bram_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_lmb_bram_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_lmb_bram_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'rsta_busy' of module 'snes_block_lmb_bram_1' is unconnected for instance 'lmb_bram' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3201]
+WARNING: [Synth 8-7071] port 'rstb_busy' of module 'snes_block_lmb_bram_1' is unconnected for instance 'lmb_bram' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3201]
+WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'snes_block_lmb_bram_1' has 16 connections declared, but only 14 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:3201]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_V8ROGE' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:2984]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_microblaze_0_xlconcat_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_microblaze_0_xlconcat_0/synth/snes_block_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_microblaze_0_xlconcat_0' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_microblaze_0_xlconcat_0/synth/snes_block_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_mig_7series_0_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_mig_7series_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_mig_7series_0_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_mig_7series_0_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_1' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_2' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_3' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7071] port 'ui_addn_clk_4' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7071] port 'app_sr_active' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7071] port 'app_ref_ack' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7071] port 'app_zq_ack' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7071] port 'init_calib_complete' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7071] port 'device_temp' of module 'snes_block_mig_7series_0_1' is unconnected for instance 'mig_7series_0' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+WARNING: [Synth 8-7023] instance 'mig_7series_0' of module 'snes_block_mig_7series_0_1' has 69 connections declared, but only 60 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5134]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_rst_mig_7series_0_83M_1' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_rst_mig_7series_0_83M_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_rst_mig_7series_0_83M_1' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_rst_mig_7series_0_83M_1_stub.v:5]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'snes_block_rst_mig_7series_0_83M_1' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5195]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'snes_block_rst_mig_7series_0_83M_1' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5195]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'snes_block_rst_mig_7series_0_83M_1' is unconnected for instance 'rst_mig_7series_0_83M' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5195]
+WARNING: [Synth 8-7023] instance 'rst_mig_7series_0_83M' of module 'snes_block_rst_mig_7series_0_83M_1' has 10 connections declared, but only 7 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5195]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_axi_quad_spi_0_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_axi_quad_spi_0_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_quad_spi_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'io0_t' of module 'snes_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5203]
+INFO: [Common 17-14] Message 'Synth 8-7071' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7023] instance 'spi_usb' of module 'snes_block_axi_quad_spi_0_0' has 33 connections declared, but only 27 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5203]
+INFO: [Synth 8-6157] synthesizing module 'snes_block_axi_timer_0_0' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block_axi_timer_0_0' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/snes_block_axi_timer_0_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'timer_usb_axi' of module 'snes_block_axi_timer_0_0' has 26 connections declared, but only 23 given [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:5231]
+INFO: [Synth 8-6155] done synthesizing module 'snes_block' (0#1) [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/synth/snes_block.v:4042]
+WARNING: [Synth 8-7023] instance 'snesblaze' of module 'snes_block' has 33 connections declared, but only 29 given [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:150]
+INFO: [Synth 8-6157] synthesizing module 'WRAM' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/WRAM.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'WRAM' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/WRAM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_aram' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_aram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_aram' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_aram_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_vram' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_vram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_vram' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/.Xil/Vivado-36756-EvanSchool/realtime/blk_mem_gen_vram_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/design_source/hex_driver.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'SNES_toplevel' (0#1) [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/new/SNES_toplevel.sv:21]
+WARNING: [Synth 8-3848] Net DSP_DO in module/entity DSP_LHRomMap does not have driver. [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/chip/DSP/DSP_LHRomMap.vhd:69]
+WARNING: [Synth 8-6014] Unused sequential element FIELD_reg was removed.  [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/imports/rtl/CPU.vhd:826]
+WARNING: [Synth 8-3848] Net GSU_ACTIVE in module/entity main does not have driver. [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:83]
+WARNING: [Synth 8-3848] Net GG_AVAILABLE in module/entity main does not have driver. [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:115]
+WARNING: [Synth 8-3848] Net MAP_ACTIVE in module/entity main does not have driver. [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/sources_1/V2SV-main/main.sv:224]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1741.605 ; gain = 907.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 1741.605 ; gain = 907.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 1741.605 ; gain = 907.324
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.242 . Memory (MB): peak = 1741.605 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_microblaze_0_1/snes_block_microblaze_0_1/snes_block_microblaze_0_1_in_context.xdc] for cell 'snesblaze/microblaze_0'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_microblaze_0_1/snes_block_microblaze_0_1/snes_block_microblaze_0_1_in_context.xdc] for cell 'snesblaze/microblaze_0'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_xbar_0/snes_block_xbar_0/snes_block_xbar_0_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_xbar_0/snes_block_xbar_0/snes_block_xbar_0_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_9/snes_block_auto_pc_9/snes_block_auto_pc_3_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_9/snes_block_auto_pc_9/snes_block_auto_pc_3_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_0/snes_block_auto_pc_0/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_0/snes_block_auto_pc_0/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_1/snes_block_auto_pc_1/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m02_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_1/snes_block_auto_pc_1/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m02_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_2/snes_block_auto_pc_2/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_2/snes_block_auto_pc_2/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m03_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_3/snes_block_auto_pc_3/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_3/snes_block_auto_pc_3/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m04_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_4/snes_block_auto_pc_4/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m05_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_4/snes_block_auto_pc_4/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m05_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_5/snes_block_auto_pc_5/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m06_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_5/snes_block_auto_pc_5/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m06_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_6/snes_block_auto_pc_6/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m07_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_6/snes_block_auto_pc_6/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m07_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_7/snes_block_auto_pc_7/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m08_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_7/snes_block_auto_pc_7/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m08_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_8/snes_block_auto_pc_8/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m09_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_auto_pc_8/snes_block_auto_pc_8/snes_block_auto_pc_2_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_periph/m09_couplers/auto_pc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_microblaze_0_axi_intc_1/snes_block_microblaze_0_axi_intc_1/snes_block_microblaze_0_axi_intc_1_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_microblaze_0_axi_intc_1/snes_block_microblaze_0_axi_intc_1/snes_block_microblaze_0_axi_intc_1_in_context.xdc] for cell 'snesblaze/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mdm_1_1/snes_block_mdm_1_1/snes_block_mdm_1_1_in_context.xdc] for cell 'snesblaze/mdm_1'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mdm_1_1/snes_block_mdm_1_1/snes_block_mdm_1_1_in_context.xdc] for cell 'snesblaze/mdm_1'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_timer_0_0/snes_block_axi_timer_0_0/snes_block_axi_timer_0_0_in_context.xdc] for cell 'snesblaze/timer_usb_axi'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_timer_0_0/snes_block_axi_timer_0_0/snes_block_axi_timer_0_0_in_context.xdc] for cell 'snesblaze/timer_usb_axi'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_uartlite_0_0/snes_block_axi_uartlite_0_0/snes_block_axi_uartlite_0_0_in_context.xdc] for cell 'snesblaze/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_uartlite_0_0/snes_block_axi_uartlite_0_0/snes_block_axi_uartlite_0_0_in_context.xdc] for cell 'snesblaze/axi_uartlite_0'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_0_0/snes_block_axi_gpio_0_0/snes_block_axi_gpio_0_0_in_context.xdc] for cell 'snesblaze/gpio_usb_int'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_0_0/snes_block_axi_gpio_0_0/snes_block_axi_gpio_0_0_in_context.xdc] for cell 'snesblaze/gpio_usb_int'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_1_0/snes_block_axi_gpio_1_0/snes_block_axi_gpio_1_0_in_context.xdc] for cell 'snesblaze/gpio_usb_keycode'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_1_0/snes_block_axi_gpio_1_0/snes_block_axi_gpio_1_0_in_context.xdc] for cell 'snesblaze/gpio_usb_keycode'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_2_0/snes_block_axi_gpio_2_0/snes_block_axi_gpio_2_0_in_context.xdc] for cell 'snesblaze/gpio_usb_rst'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_2_0/snes_block_axi_gpio_2_0/snes_block_axi_gpio_2_0_in_context.xdc] for cell 'snesblaze/gpio_usb_rst'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_quad_spi_0_0/snes_block_axi_quad_spi_0_0/snes_block_axi_quad_spi_0_0_in_context.xdc] for cell 'snesblaze/spi_usb'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_quad_spi_0_0/snes_block_axi_quad_spi_0_0/snes_block_axi_quad_spi_0_0_in_context.xdc] for cell 'snesblaze/spi_usb'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_dlmb_v10_1/snes_block_dlmb_v10_1/snes_block_ilmb_v10_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_dlmb_v10_1/snes_block_dlmb_v10_1/snes_block_ilmb_v10_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_ilmb_v10_1/snes_block_ilmb_v10_1/snes_block_ilmb_v10_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_ilmb_v10_1/snes_block_ilmb_v10_1/snes_block_ilmb_v10_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_dlmb_bram_if_cntlr_1/snes_block_dlmb_bram_if_cntlr_1/snes_block_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_dlmb_bram_if_cntlr_1/snes_block_dlmb_bram_if_cntlr_1/snes_block_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_ilmb_bram_if_cntlr_1/snes_block_ilmb_bram_if_cntlr_1/snes_block_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_ilmb_bram_if_cntlr_1/snes_block_ilmb_bram_if_cntlr_1/snes_block_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_lmb_bram_1/snes_block_lmb_bram_1/snes_block_lmb_bram_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_lmb_bram_1/snes_block_lmb_bram_1/snes_block_lmb_bram_1_in_context.xdc] for cell 'snesblaze/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_0_1/snes_block_axi_gpio_0_1/snes_block_axi_gpio_0_1_in_context.xdc] for cell 'snesblaze/axi_romdata'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_0_1/snes_block_axi_gpio_0_1/snes_block_axi_gpio_0_1_in_context.xdc] for cell 'snesblaze/axi_romdata'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_1_1/snes_block_axi_gpio_1_1/snes_block_axi_gpio_1_1_in_context.xdc] for cell 'snesblaze/axi_romaddr'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_axi_gpio_1_1/snes_block_axi_gpio_1_1/snes_block_axi_gpio_1_1_in_context.xdc] for cell 'snesblaze/axi_romaddr'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc] for cell 'snesblaze/mig_7series_0'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc] for cell 'snesblaze/mig_7series_0'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_rst_mig_7series_0_83M_1/snes_block_rst_mig_7series_0_83M_1/snes_block_rst_mig_7series_0_83M_0_in_context.xdc] for cell 'snesblaze/rst_mig_7series_0_83M'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_rst_mig_7series_0_83M_1/snes_block_rst_mig_7series_0_83M_1/snes_block_rst_mig_7series_0_83M_0_in_context.xdc] for cell 'snesblaze/rst_mig_7series_0_83M'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_brr_buf/blk_mem_brr_buf/blk_mem_gen_errbuf_in_context.xdc] for cell 'main/SNES/DSP/brr_buf'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_brr_buf/blk_mem_brr_buf/blk_mem_gen_errbuf_in_context.xdc] for cell 'main/SNES/DSP/brr_buf'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'main/vga_to_hdmi'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc] for cell 'main/vga_to_hdmi'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_gen_aram/blk_mem_gen_aram/blk_mem_gen_aram_in_context.xdc] for cell 'aram'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_gen_aram/blk_mem_gen_aram/blk_mem_gen_aram_in_context.xdc] for cell 'aram'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_gen_vram/blk_mem_gen_vram/blk_mem_gen_vram_in_context.xdc] for cell 'vram'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_gen_vram/blk_mem_gen_vram/blk_mem_gen_vram_in_context.xdc] for cell 'vram'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_gen_cgram/blk_mem_gen_cgram/blk_mem_gen_cgram_in_context.xdc] for cell 'main/SNES/PPU/our_cgram'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_gen_cgram/blk_mem_gen_cgram/blk_mem_gen_cgram_in_context.xdc] for cell 'main/SNES/PPU/our_cgram'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_gen_oam/blk_mem_gen_oam/blk_mem_gen_oam_in_context.xdc] for cell 'main/SNES/PPU/our_oam'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/blk_mem_gen_oam/blk_mem_gen_oam/blk_mem_gen_oam_in_context.xdc] for cell 'main/SNES/PPU/our_oam'
+Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'main/clk_wiz'
+Finished Parsing XDC File [c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'main/clk_wiz'
+Parsing XDC File [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/constrs_1/imports/snesconst.xdc]
+Finished Parsing XDC File [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/constrs_1/imports/snesconst.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/constrs_1/imports/snesconst.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SNES_toplevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SNES_toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/constrs_1/imports/urbana_ddr3.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'clk_100MHz' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/constrs_1/imports/urbana_ddr3.xdc:28]
+WARNING: [Constraints 18-619] A clock with name 'clk_100MHz' already exists, overwriting the previous clock with the same name. [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/constrs_1/imports/urbana_ddr3.xdc:28]
+Finished Parsing XDC File [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/constrs_1/imports/urbana_ddr3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.srcs/constrs_1/imports/urbana_ddr3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SNES_toplevel_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SNES_toplevel_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1811.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1811.773 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'snesblaze/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '12.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'snesblaze/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '12.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:25 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:25 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for SYS_CLK_clk_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYS_CLK_clk_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for SYS_CLK_clk_p. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SYS_CLK_clk_p. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/bd/snes_block/ip/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1/snes_block_mig_7series_0_1_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_n. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_clk_p. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_n[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[0]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[1]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for hdmi_tmds_data_p[2]. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/hdmi_tx_0/hdmi_tx_0/hdmi_tx_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  c:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m02_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m04_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m05_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m06_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m07_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m08_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph/m09_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/timer_usb_axi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/gpio_usb_int. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/gpio_usb_keycode. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/gpio_usb_rst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/spi_usb. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/axi_romdata. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/axi_romaddr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/mig_7series_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for snesblaze/rst_mig_7series_0_83M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for main/SNES/DSP/brr_buf. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for main/vga_to_hdmi. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for main/SNES/PPU/our_cgram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for main/SNES/PPU/our_oam. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for main/clk_wiz. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:25 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'REFS_reg' in module 'SCPU'
+INFO: [Synth 8-802] inferred FSM for state register 'DS_reg' in module 'SCPU'
+INFO: [Synth 8-802] inferred FSM for state register 'HDS_reg' in module 'SCPU'
+DSP Debug: Collapsed multipler of size 34, multiple = 3
+INFO: [Synth 8-802] inferred FSM for state register 'BD_STATE_reg' in module 'DSP'
+INFO: [Synth 8-802] inferred FSM for state register 'GS_STATE_reg' in module 'DSP'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               refs_idle |                              001 |                               00
+               refs_exec |                              010 |                               01
+                refs_end |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'REFS_reg' using encoding 'one-hot' in module 'SCPU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ds_idle |                               00 |                               00
+               ds_ch_sel |                               01 |                               10
+             ds_transfer |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'DS_reg' using encoding 'sequential' in module 'SCPU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                hds_idle |                              100 |                              000
+        hds_pre_transfer |                              010 |                              100
+            hds_transfer |                              000 |                              101
+            hds_pre_init |                              101 |                              001
+                hds_init |                              001 |                              010
+            hds_init_ind |                              011 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'HDS_reg' using encoding 'sequential' in module 'SCPU'
+INFO: [Synth 8-3971] The signal "SPR_BUF:/spr_buf_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+*
+                 bd_wait |                             0010 |                               01
+                   bd_p0 |                             0100 |                               10
+                   bd_p1 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'BD_STATE_reg' using encoding 'one-hot' in module 'DSP'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 gs_wait |                              001 |                              001
+                 gs_brr0 |                              010 |                              010
+                 gs_brr1 |                              011 |                              011
+                 gs_brr2 |                              100 |                              100
+                 gs_brr3 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GS_STATE_reg' using encoding 'sequential' in module 'DSP'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:39 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input   34 Bit       Adders := 1     
+	   2 Input   34 Bit       Adders := 1     
+	   5 Input   34 Bit       Adders := 2     
+	   3 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 3     
+	   2 Input   24 Bit       Adders := 3     
+	   4 Input   24 Bit       Adders := 2     
+	   3 Input   24 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 12    
+	   3 Input   17 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 6     
+	   2 Input   16 Bit       Adders := 29    
+	   2 Input   15 Bit       Adders := 3     
+	   3 Input   14 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 5     
+	   3 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 9     
+	   2 Input    9 Bit       Adders := 17    
+	   3 Input    9 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 27    
+	   2 Input    6 Bit       Adders := 15    
+	   3 Input    6 Bit       Adders := 7     
+	   2 Input    5 Bit       Adders := 3     
+	   3 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 37    
+	   2 Input    3 Bit       Adders := 11    
+	   2 Input    2 Bit       Adders := 5     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      8 Bit         XORs := 3     
+	   2 Input      4 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 32    
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	              112 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 3     
+	               23 Bit    Registers := 1     
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 95    
+	               15 Bit    Registers := 22    
+	               13 Bit    Registers := 4     
+	               12 Bit    Registers := 13    
+	               10 Bit    Registers := 11    
+	                9 Bit    Registers := 21    
+	                8 Bit    Registers := 200   
+	                7 Bit    Registers := 38    
+	                6 Bit    Registers := 14    
+	                5 Bit    Registers := 14    
+	                4 Bit    Registers := 49    
+	                3 Bit    Registers := 43    
+	                2 Bit    Registers := 36    
+	                1 Bit    Registers := 130   
++---Multipliers : 
+	              17x32  Multipliers := 1     
++---RAMs : 
+	            1024K Bit	(131072 X 8 bit)          RAMs := 1     
+	               2K Bit	(256 X 9 bit)          RAMs := 1     
+	             1024 Bit	(128 X 8 bit)          RAMs := 1     
+	              256 Bit	(32 X 8 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 8     
++---Muxes : 
+	  10 Input  112 Bit        Muxes := 1     
+	   8 Input   56 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 16    
+	   4 Input   24 Bit        Muxes := 3     
+	   8 Input   24 Bit        Muxes := 2     
+	   2 Input   23 Bit        Muxes := 6     
+	   6 Input   23 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 5     
+	   4 Input   20 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   6 Input   17 Bit        Muxes := 1     
+	   4 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 546   
+	   4 Input   16 Bit        Muxes := 4     
+	  53 Input   16 Bit        Muxes := 2     
+	   8 Input   16 Bit        Muxes := 5     
+	   3 Input   16 Bit        Muxes := 53    
+	  26 Input   16 Bit        Muxes := 8     
+	   9 Input   16 Bit        Muxes := 1     
+	   7 Input   16 Bit        Muxes := 2     
+	  13 Input   16 Bit        Muxes := 24    
+	   6 Input   16 Bit        Muxes := 34    
+	   4 Input   15 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 32    
+	  26 Input   15 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 8     
+	   4 Input   13 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 50    
+	  32 Input   12 Bit        Muxes := 2     
+	   6 Input   12 Bit        Muxes := 8     
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 16    
+	   8 Input   10 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 18    
+	   3 Input    9 Bit        Muxes := 1     
+	   4 Input    9 Bit        Muxes := 13    
+	  55 Input    9 Bit        Muxes := 1     
+	   6 Input    9 Bit        Muxes := 1     
+	   8 Input    9 Bit        Muxes := 2     
+	  10 Input    9 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 261   
+	  13 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 2     
+	   8 Input    8 Bit        Muxes := 13    
+	  12 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 17    
+	  10 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 10    
+	   7 Input    8 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 12    
+	   4 Input    7 Bit        Muxes := 3     
+	   8 Input    7 Bit        Muxes := 1     
+	  16 Input    6 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 17    
+	   4 Input    6 Bit        Muxes := 1     
+	  35 Input    6 Bit        Muxes := 1     
+	  13 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 66    
+	   4 Input    5 Bit        Muxes := 1     
+	  32 Input    5 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 184   
+	   4 Input    4 Bit        Muxes := 5     
+	  35 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 3     
+	   5 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 26    
+	   4 Input    3 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 43    
+	   8 Input    3 Bit        Muxes := 14    
+	  32 Input    3 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 2     
+	  35 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 3     
+	   9 Input    3 Bit        Muxes := 1     
+	  34 Input    3 Bit        Muxes := 1     
+	  19 Input    3 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 1     
+	  17 Input    3 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 10    
+	   4 Input    2 Bit        Muxes := 2     
+	  35 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 76    
+	  32 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 9     
+	  19 Input    2 Bit        Muxes := 2     
+	  12 Input    2 Bit        Muxes := 1     
+	  11 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 994   
+	  53 Input    1 Bit        Muxes := 54    
+	   8 Input    1 Bit        Muxes := 45    
+	  54 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 37    
+	   9 Input    1 Bit        Muxes := 12    
+	  12 Input    1 Bit        Muxes := 2     
+	  26 Input    1 Bit        Muxes := 32    
+	   7 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 102   
+	   5 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 47    
+	  10 Input    1 Bit        Muxes := 1     
+	  34 Input    1 Bit        Muxes := 3     
+	  16 Input    1 Bit        Muxes := 1     
+	  17 Input    1 Bit        Muxes := 2     
+	  13 Input    1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B2.
+DSP Report: register GTBL_DO_reg is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B2.
+DSP Report: register LAST_ENV_reg is absorbed into DSP ARG.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+DSP Report: Generating DSP ARG, operation Mode is: A*B.
+DSP Report: operator ARG is absorbed into DSP ARG.
+INFO: [Synth 8-3971] The signal "SNESi_1/PPU/our_spr_buf/spr_buf_reg" was recognized as a true dual port RAM template.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_BD_STATE_reg[0]) is unused and will be removed from module DSP.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_DS_reg[1]) is unused and will be removed from module SCPU.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_DS_reg[0]) is unused and will be removed from module SCPU.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:02:23 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------+---------------------+---------------+----------------+
+|Module Name   | RTL Object          | Depth x Width | Implemented As | 
++--------------+---------------------+---------------+----------------+
+|MCode         | M_TAB[0][ALUCtrl]   | 2048x5        | LUT            | 
+|MCode         | ALU_TAB[0][secOp]   | 32x3          | LUT            | 
+|MCode         | M_TAB[0][stateCtrl] | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][addrBus]   | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][addrInc]   | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][muxCtrl]   | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][addrCtrl]  | 2048x8        | LUT            | 
+|MCode         | M_TAB[0][loadPC]    | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][loadSP]    | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][regAXY]    | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][loadP]     | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][loadT]     | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][loadDKB]   | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][busCtrl]   | 2048x6        | LUT            | 
+|MCode         | M_TAB[0][byteSel]   | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][outBus]    | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][va]        | 2048x2        | LUT            | 
+|SPC700_MCode  | ALU_TAB[0][secOp]   | 64x4          | LUT            | 
+|SPC700_MCode  | ALU_TAB[0][chgCO]   | 64x1          | LUT            | 
+|SMP           | IPLROM[0]           | 64x8          | LUT            | 
+|DSP           | VS_TBL[0,1][S]      | 32x5          | LUT            | 
+|DSP           | VS_TBL[0,2][V]      | 32x3          | LUT            | 
+|DSP           | VS_TBL[0,1][V]      | 32x3          | LUT            | 
+|DSP           | VS_TBL[0,0][V]      | 32x3          | LUT            | 
+|DSP           | RS_TBL[0,0]         | 32x4          | LUT            | 
+|DSP           | IS_TBL[0,2][S]      | 32x1          | LUT            | 
+|DSP           | BDS_TBL[0,0][S]     | 32x1          | LUT            | 
+|DSP           | BDS_TBL[0,2][S]     | 32x1          | LUT            | 
+|DSP           | GTBL[0]             | 512x11        | LUT            | 
+|DSP           | BRR_VOICE_TBL[0]    | 32x3          | LUT            | 
+|DSP           | RA_TBL[0,1]         | 32x6          | LUT            | 
+|DSP           | RA_TBL[0,2]         | 32x7          | LUT            | 
+|DSP           | RA_TBL[0,0]         | 32x7          | LUT            | 
+|DSP           | VS_TBL[0,1][S]      | 32x5          | LUT            | 
+|DSP           | RS_TBL[0,0]         | 32x4          | LUT            | 
+|DSP           | IS_TBL[0,2][S]      | 32x1          | LUT            | 
+|DSP           | VS_TBL[0,2][V]      | 32x3          | LUT            | 
+|DSP           | VS_TBL[0,1][V]      | 32x3          | LUT            | 
+|DSP           | VS_TBL[0,0][V]      | 32x3          | LUT            | 
+|DSP           | BDS_TBL[0,0][S]     | 32x1          | LUT            | 
+|DSP           | BDS_TBL[0,2][S]     | 32x1          | LUT            | 
+|DSP           | GTBL[0]             | 512x11        | LUT            | 
+|DSP           | BRR_VOICE_TBL[0]    | 32x3          | LUT            | 
+|DSP           | RA_TBL[0,1]         | 32x6          | LUT            | 
+|DSP           | RA_TBL[0,2]         | 32x7          | LUT            | 
+|DSP           | RA_TBL[0,0]         | 32x7          | LUT            | 
+|SPC700_MCode  | MI_reg[ALUCtrl]     | 4096x6        | Block RAM      | 
+|SPC700_MCode  | ALU_TAB[0][secOp]   | 64x4          | LUT            | 
+|SPC700_MCode  | ALU_TAB[0][chgCO]   | 64x1          | LUT            | 
+|SPC700_MCode  | MI_reg[stateCtrl]   | 4096x2        | Block RAM      | 
+|SPC700_MCode  | MI_reg[addrBus]     | 4096x2        | Block RAM      | 
+|SPC700_MCode  | MI_reg[addrCtrl]    | 4096x6        | Block RAM      | 
+|SPC700_MCode  | MI_reg[regMode]     | 4096x5        | Block RAM      | 
+|SPC700_MCode  | MI_reg[regAXY]      | 4096x2        | Block RAM      | 
+|SPC700_MCode  | MI_reg[busCtrl]     | 4096x6        | Block RAM      | 
+|SPC700_MCode  | MI_reg[outBus]      | 4096x3        | Block RAM      | 
+|MCode         | M_TAB[0][ALUCtrl]   | 2048x5        | LUT            | 
+|MCode         | ALU_TAB[0][secOp]   | 32x3          | LUT            | 
+|MCode         | M_TAB[0][stateCtrl] | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][addrBus]   | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][addrInc]   | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][muxCtrl]   | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][addrCtrl]  | 2048x8        | LUT            | 
+|MCode         | M_TAB[0][loadPC]    | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][loadSP]    | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][regAXY]    | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][loadP]     | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][loadT]     | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][loadDKB]   | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][busCtrl]   | 2048x6        | LUT            | 
+|MCode         | M_TAB[0][byteSel]   | 2048x2        | LUT            | 
+|MCode         | M_TAB[0][outBus]    | 2048x3        | LUT            | 
+|MCode         | M_TAB[0][va]        | 2048x2        | LUT            | 
+|SNES_toplevel | SMP/IPLROM[0]       | 64x8          | LUT            | 
++--------------+---------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|SNESi_1/DSP   | our_regram/REGRAM_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|SNES_toplevel | wram/WRAM_reg         | 128 K x 8(READ_FIRST)  | W |   | 128 K x 8(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
++--------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|SPPU        | A*B         | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SPPU        | A*B         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SPPU        | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SPPU        | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SPPU        | A*B         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SPPU        | A*B         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SPPU        | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SPPU        | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|SPPU        | A*B         | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B2        | 16     | 12     | -      | -      | 28     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B2        | 16     | 12     | -      | -      | 28     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 16     | 15     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 15     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 15     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 15     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 15     | 8      | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk_100MHz'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:02:29 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:02:30 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|SNESi_1/DSP   | our_regram/REGRAM_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|SNES_toplevel | wram/WRAM_reg         | 128 K x 8(READ_FIRST)  | W |   | 128 K x 8(WRITE_FIRST) |   | R | Port A and B     | 0      | 32     | 
++--------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (wram/WRAM_reg_mux_sel_b_pos_0__6) is unused and will be removed from module SNES_toplevel.
+INFO: [Synth 8-7052] The timing for the instance main/SNES/DSP/our_regram/REGRAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SMP/SPC700/MCode/MI_reg[ALUCtrl] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SMP/SPC700/MCode/MI_reg[stateCtrl] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SMP/SPC700/MCode/MI_reg[addrBus] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SMP/SPC700/MCode/MI_reg[addrCtrl] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SMP/SPC700/MCode/MI_reg[regMode] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SMP/SPC700/MCode/MI_reg[regAXY] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SMP/SPC700/MCode/MI_reg[busCtrl] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SMP/SPC700/MCode/MI_reg[outBus] (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wram/WRAM_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wram/WRAM_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wram/WRAM_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wram/WRAM_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wram/WRAM_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wram/WRAM_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wram/WRAM_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance wram/WRAM_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:02:33 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:02:36 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:02:36 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:02:37 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:02:37 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:02:37 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:02:37 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DSP         | A*B'        | 30     | 11     | -      | -      | 28     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|DSP         | (A*B')'     | 30     | 11     | -      | -      | 28     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|DSP         | A*B         | 30     | 18     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 30     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 30     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 30     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 30     | 18     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|DSP         | A*B         | 30     | 18     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |snes_block_xbar_0                  |         1|
+|2     |snes_block_auto_pc_0               |         1|
+|3     |snes_block_auto_pc_1               |         1|
+|4     |snes_block_auto_pc_2               |         1|
+|5     |snes_block_auto_pc_3               |         1|
+|6     |snes_block_auto_pc_4               |         1|
+|7     |snes_block_auto_pc_5               |         1|
+|8     |snes_block_auto_pc_6               |         1|
+|9     |snes_block_auto_pc_7               |         1|
+|10    |snes_block_auto_pc_8               |         1|
+|11    |snes_block_auto_pc_9               |         1|
+|12    |snes_block_axi_gpio_1_1            |         1|
+|13    |snes_block_axi_gpio_0_1            |         1|
+|14    |snes_block_axi_uartlite_0_0        |         1|
+|15    |snes_block_axi_gpio_0_0            |         1|
+|16    |snes_block_axi_gpio_1_0            |         1|
+|17    |snes_block_axi_gpio_2_0            |         1|
+|18    |snes_block_mdm_1_1                 |         1|
+|19    |snes_block_microblaze_0_1          |         1|
+|20    |snes_block_microblaze_0_axi_intc_1 |         1|
+|21    |snes_block_mig_7series_0_1         |         1|
+|22    |snes_block_rst_mig_7series_0_83M_1 |         1|
+|23    |snes_block_axi_quad_spi_0_0        |         1|
+|24    |snes_block_axi_timer_0_0           |         1|
+|25    |snes_block_dlmb_bram_if_cntlr_1    |         1|
+|26    |snes_block_dlmb_v10_1              |         1|
+|27    |snes_block_ilmb_bram_if_cntlr_1    |         1|
+|28    |snes_block_ilmb_v10_1              |         1|
+|29    |snes_block_lmb_bram_1              |         1|
+|30    |blk_mem_gen_aram                   |         1|
+|31    |blk_mem_gen_vram                   |         1|
+|32    |hdmi_tx_0                          |         1|
+|33    |clk_wiz_0                          |         1|
+|34    |blk_mem_brr_buf                    |         1|
+|35    |blk_mem_gen_cgram                  |         1|
+|36    |blk_mem_gen_oam                    |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |blk_mem_brr_buf                  |     1|
+|2     |blk_mem_gen_aram                 |     1|
+|3     |blk_mem_gen_cgram                |     1|
+|4     |blk_mem_gen_oam                  |     1|
+|5     |blk_mem_gen_vram                 |     1|
+|6     |clk_wiz                          |     1|
+|7     |hdmi_tx                          |     1|
+|8     |snes_block_auto_pc               |    10|
+|18    |snes_block_axi_gpio_0            |     2|
+|20    |snes_block_axi_gpio_1            |     2|
+|22    |snes_block_axi_gpio_2            |     1|
+|23    |snes_block_axi_quad_spi_0        |     1|
+|24    |snes_block_axi_timer_0           |     1|
+|25    |snes_block_axi_uartlite_0        |     1|
+|26    |snes_block_dlmb_bram_if_cntlr    |     1|
+|27    |snes_block_dlmb_v10              |     1|
+|28    |snes_block_ilmb_bram_if_cntlr    |     1|
+|29    |snes_block_ilmb_v10              |     1|
+|30    |snes_block_lmb_bram              |     1|
+|31    |snes_block_mdm_1                 |     1|
+|32    |snes_block_microblaze_0          |     1|
+|33    |snes_block_microblaze_0_axi_intc |     1|
+|34    |snes_block_mig_7series_0         |     1|
+|35    |snes_block_rst_mig_7series_0_83M |     1|
+|36    |snes_block_xbar                  |     1|
+|37    |CARRY4                           |   238|
+|38    |DSP48E1                          |    10|
+|41    |LUT1                             |   155|
+|42    |LUT2                             |   559|
+|43    |LUT3                             |   540|
+|44    |LUT4                             |   475|
+|45    |LUT5                             |   782|
+|46    |LUT6                             |  1777|
+|47    |MUXF7                            |   113|
+|48    |MUXF8                            |     2|
+|49    |RAMB18E1                         |     5|
+|54    |RAMB36E1                         |    20|
+|60    |FDCE                             |  1606|
+|61    |FDPE                             |    97|
+|62    |FDRE                             |   160|
+|63    |FDSE                             |    15|
+|64    |IBUF                             |     5|
+|65    |OBUF                             |    29|
++------+---------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:02:37 . Memory (MB): peak = 1811.844 ; gain = 977.562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:02:33 . Memory (MB): peak = 1811.844 ; gain = 907.324
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:02:37 . Memory (MB): peak = 1811.844 ; gain = 977.562
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1811.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 388 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1811.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e98cca55
+INFO: [Common 17-83] Releasing license: Synthesis
+275 Infos, 139 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:02:41 . Memory (MB): peak = 1811.844 ; gain = 1346.910
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/SNESonUrbana/SNESonUrbana.runs/synth_1/SNES_toplevel.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SNES_toplevel_utilization_synth.rpt -pb SNES_toplevel_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May  3 04:30:03 2024...

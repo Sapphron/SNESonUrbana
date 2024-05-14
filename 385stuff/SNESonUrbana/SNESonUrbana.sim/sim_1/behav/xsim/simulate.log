@@ -1,0 +1,67 @@
+Time resolution is 1 fs
+Block Memory Generator module simulation_top.SNES.main.SNES.PPU.our_cgram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module simulation_top.SNES.main.SNES.PPU.our_oam.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module simulation_top.SNES.main.SNES.DSP.brr_buf.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module simulation_top.SNES.snesblaze.microblaze_0_local_memory.lmb_bram.inst.\native_mem_mapped_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: file design.txt could not be opened
+ *** Warning: The analog data file design.txt for XADC instance simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.\temp_mon_enabled.u_tempmon .\xadc_supplied_temperature.XADC_inst  was not found. Use the SIM_MONITOR_FILE parameter to specify the analog data file name or use the default name: design.txt.
+
+############# Write Clocks PLLE2_ADV Parameters #############
+
+nCK_PER_CLK      =       4
+CLK_PERIOD       =    9750
+CLKIN1_PERIOD    =   9.750
+DIVCLK_DIVIDE    =       1
+CLKFBOUT_MULT    =      13
+VCO_PERIOD       =   750.0
+CLKOUT0_DIVIDE_F =       2
+CLKOUT1_DIVIDE   =       4
+CLKOUT2_DIVIDE   =      64
+CLKOUT3_DIVIDE   =      16
+CLKOUT0_PERIOD   =    1500
+CLKOUT1_PERIOD   =    3000
+CLKOUT2_PERIOD   =   48000
+CLKOUT3_PERIOD   =   12000
+CLKOUT4_PERIOD   =    6000
+############################################################
+
+############# MMCME2_ADV Parameters #############
+
+MMCM_MULT_F           =           8
+MMCM_VCO_FREQ (MHz)   = 666.000
+MMCM_VCO_PERIOD       = 1501.502
+#################################################
+
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : BYTE_LANES_B0 = f BYTE_LANES_B1 = 0 DATA_CTL_B0 = c DATA_CTL_B1 = 0
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_LANE =           4 HIGHEST_LANE_B0 =           4 HIGHEST_LANE_B1 =           0
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : HIGHEST_BANK =           1
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : FREQ_REF_PERIOD         = 1500.00 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DDR_TCK                 = 3000 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_S2_TAPS_SIZE         = 11.72 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_EARLY       = 1 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_OFFSET      = 1557.90 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_META_ZONE   = 200.00 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_FINE_INTR_DLY   = 874.70 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_COARSE_INTR_DLY = 567.40 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_STG2_INTRINSIC_DELAY = 1442.10 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_CIRC_BUF_DELAY       = 60 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_INTRINSIC_DELAY      = 1442.10 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_DELAY                = 2145.22 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PO_OCLK_DELAY           = 0 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : L_PHY_0_PO_FINE_DELAY   = 60 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG1_INTRINSIC_DELAY = 0.00 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_INTRINSIC_DELAY = 849.45 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_INTRINSIC_DELAY      = 849.45 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_MAX_STG2_DELAY       = 738.28 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_OFFSET               = 96.00 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : PI_STG2_DELAY           = 96.00 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy :PI_STG2_DELAY_CAND       = 96.00 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : DEFAULT_RCLK_DELAY      = 8 
+simulation_top.SNES.snesblaze.mig_7series_0.u_snes_block_mig_7series_0_1_mig.u_memc_ui_top_axi.mem_intfc0.ddr_phy_top0.u_ddr_mc_phy_wrapper.u_ddr_mc_phy : RCLK_SELECT_EDGE        = 111 
+Block Memory Generator module simulation_top.SNES.aram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator module simulation_top.SNES.vram.inst.\native_mem_module.blk_mem_gen_v8_4_5_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. simulation_top.SNES.snesblaze.spi_usb.U0.no_dual_quad_mode.QSPI_NORMAL.qspi_legacy_md_gen.QSPI_CORE_INTERFACE_I.fifo_exists.RX_FIFO_II.\gnuram_async_fifo.xpm_fifo_base_inst .\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /simulation_top/SNES/snesblaze/spi_usb/U0/no_dual_quad_mode/QSPI_NORMAL/qspi_legacy_md_gen/QSPI_CORE_INTERFACE_I/fifo_exists/RX_FIFO_II/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial299_17852  Scope: simulation_top.SNES.snesblaze.spi_usb.U0.no_dual_quad_mode.QSPI_NORMAL.qspi_legacy_md_gen.QSPI_CORE_INTERFACE_I.fifo_exists.RX_FIFO_II.\gnuram_async_fifo.xpm_fifo_base_inst .\gen_sdpram.xpm_memory_base_inst .config_drc  File: D:/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 493
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. simulation_top.SNES.snesblaze.spi_usb.U0.no_dual_quad_mode.QSPI_NORMAL.qspi_legacy_md_gen.QSPI_CORE_INTERFACE_I.fifo_exists.TX_FIFO_II.xpm_fifo_instance.xpm_fifo_async_inst.\gnuram_async_fifo.xpm_fifo_base_inst .\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /simulation_top/SNES/snesblaze/spi_usb/U0/no_dual_quad_mode/QSPI_NORMAL/qspi_legacy_md_gen/QSPI_CORE_INTERFACE_I/fifo_exists/TX_FIFO_II/xpm_fifo_instance/xpm_fifo_async_inst/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial299_17852  Scope: simulation_top.SNES.snesblaze.spi_usb.U0.no_dual_quad_mode.QSPI_NORMAL.qspi_legacy_md_gen.QSPI_CORE_INTERFACE_I.fifo_exists.TX_FIFO_II.xpm_fifo_instance.xpm_fifo_async_inst.\gnuram_async_fifo.xpm_fifo_base_inst .\gen_sdpram.xpm_memory_base_inst .config_drc  File: D:/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 493
+INFO: xsimkernel Simulation Memory Usage: 117764 KB (Peak: 117764 KB), Simulation CPU Usage: 14483 ms

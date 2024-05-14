@@ -1,0 +1,9 @@
+18:09:55 DEBUG : Logs will be stored at 'C:/Users/sapph/OneDrive/Documents/GitHub/ECE385-SP24/UrbanaMan/mb_usb_urbanaman/IDE.log'.
+18:09:58 INFO  : Platform repository initialization has completed.
+18:09:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\sapph\OneDrive\Documents\GitHub\ECE385-SP24\UrbanaMan\mb_usb_urbanaman\temp_xsdb_launch_script.tcl
+18:09:58 INFO  : Registering command handlers for Vitis TCF services
+18:10:01 INFO  : XSCT server has started successfully.
+18:10:01 INFO  : plnx-install-location is set to ''
+18:10:01 INFO  : Successfully done setting XSCT server connection channel  
+18:10:01 INFO  : Successfully done query RDI_DATADIR 
+18:10:01 INFO  : Successfully done setting workspace for the tool. 

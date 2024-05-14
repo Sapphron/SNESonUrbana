@@ -1,0 +1,19 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot urbanaman_rom_sim_behav xil_defaultlib.urbanaman_rom_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_x1' [D:/Spring2024Schoolwork/ECE385/ECE385-SP24-Final-Project/UrbanaMan/UrbanaMan.srcs/sources_1/imports/Downloads/collisions.sv:46]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_x2' [D:/Spring2024Schoolwork/ECE385/ECE385-SP24-Final-Project/UrbanaMan/UrbanaMan.srcs/sources_1/imports/Downloads/collisions.sv:49]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_x3' [D:/Spring2024Schoolwork/ECE385/ECE385-SP24-Final-Project/UrbanaMan/UrbanaMan.srcs/sources_1/imports/Downloads/collisions.sv:52]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 9 for port 'addr_x4' [D:/Spring2024Schoolwork/ECE385/ECE385-SP24-Final-Project/UrbanaMan/UrbanaMan.srcs/sources_1/imports/Downloads/collisions.sv:55]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.map_rommer
+Compiling module xil_defaultlib.collisions
+Compiling module xil_defaultlib.urbanaman_rom_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot urbanaman_rom_sim_behav

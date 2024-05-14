@@ -1,0 +1,32 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65816_pkg.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/BCDAdder.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddSubBCD.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/ALU.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/SPC700_pkg.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddSub.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/BCDAdj.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/ALU.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/AddrGen.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/AddrGen.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/CEGen.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/MCode.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/65C816/P65C816.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/CPU.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/DSP_PKG.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/DSP.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/chip/DSP/OBC1.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/chip/SRTC.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/chip/DSP/DSP_LHRomMap.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/MCode.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/MulDiv.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/PPU_PKG.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/PPU.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SPC700/SPC700.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SMP.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SWRAM.vhd" \
+"../../../../TheSNESRedo.srcs/sources_1/imports/SNESonUrbana.srcs/sources_1/imports/rtl/SNES.vhd" \
+
+# Do not sort compile order
+nosort
